@@ -1,0 +1,8 @@
+node_modules/
+src/
+Records/
+Sports_collectif/
+Sports_Indiv/
+*.json
+*.mp4
+*.m4v

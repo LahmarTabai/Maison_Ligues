@@ -1,0 +1,520 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+}
+
+header ul li a {
+    color: #fff;
+}
+
+header nav ul li img {
+    height: 4rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 2.5rem;
+}
+
+header .gauche {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav img {
+    padding-top: .5rem;
+}
+
+nav .onglets {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 1rem; */
+    margin-top: 1.2rem;
+}
+
+nav .onglets li {
+    margin-left: 2.5rem;
+}
+
+nav .onglets li a {
+    color: #909191;
+    margin-left: 2rem;
+}
+
+nav .onglets li a:hover {
+    color: #fff;
+}
+
+/* droite */
+
+.droite ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+
+.droite ul li {
+    margin-right: 2rem;
+}
+
+/* GRILLES */
+body {
+    background-color: #000;
+    /* background-color: #191a1a; */
+
+}
+
+*{
+    /*le premier arrangement pour le firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #000;
+}
+
+*::-webkit-scrollbar{ /* l'arrangement pour chrome */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #000;
+    width: .1rem;
+}
+
+.films-et-series {
+    background-color: #191a1a;
+    padding: 2.5rem;
+}
+
+.films-et-series .section {
+    margin-bottom: 5.5rem;
+}
+
+.films-et-series .section h2 {
+    color: #fff;
+    line-height: 5rem;
+    margin: 0 0 1rem 1rem;
+}
+.list1 img , .list2 img {
+    display: block;
+    width: 30rem;
+    height: 20rem; 
+    padding-left: .5rem;
+
+    /* display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover; */
+}
+
+
+.list1, .list2 {
+    display: flex;
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+    overflow-y: hidden;
+}
+
+
+main div section {
+    margin: 3rem 1rem;
+}
+
+
+/* footer */
+
+footer {
+    max-width: 100rem;
+    margin: 3rem auto;
+}
+
+footer a {
+    color: #999999;
+    font-size: 1rem;
+}
+
+footer p {
+    color: #999999;
+}
+
+footer li {
+    line-height: 3rem;
+}
+
+footer p:first-child {
+    margin-bottom: 1.5rem;
+}
+
+footer p:last-child {
+    margin-top: 2rem;
+}
+
+.footer-cols {
+  
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .1rem;
+   
+    
+}
+
+/* menu déroulant */
+
+.toggle {
+    display: none;
+}
+ 
+
+.show, .ouvrir {
+    display: block;
+    transition: 0.4s;
+    color: #fff;
+}
+
+#compte {
+    margin-left: 75rem;
+}
+
+
+
+/* Tablette */
+
+@media screen and (max-width: 63rem) {
+
+    #compte {
+        margin-left: 0;
+    }
+
+    .toggle {
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+        position: relative;
+        z-index: 20;
+    }
+
+    .onglets {
+        position: relative;
+        width: 100%;
+        display: block;
+        height: 70rem;
+        /* background-color: rgba(0,0,0,0.5); */
+        padding: 2rem;
+        transform: translateX(-120%);
+        transition: transform .6s;
+    }
+
+    header {
+        background-color: #191a1a;
+        padding: 0;
+        
+    }
+
+    .onglets li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+  
+
+    header nav ul li img {
+        
+        display: block;
+        width: 110%;
+        text-align: center;
+        
+    }
+
+    .open  .onglets  {
+        transform: translateX(0%);
+    }
+
+    html , body , header   {
+        background-color: #000000;
+    }
+
+    .parent {
+        display: block;
+        width: 100%;
+        margin: .5rem 1rem 0;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 3rem;
+
+    }
+
+    .parent li:last-child button {
+        float: right;
+    } 
+
+    header {
+        background: url(../asset/Peaky-Blinders-T.jpg) no-repeat center/cover;
+    }
+
+    nav .onglets li a {
+        display: block;
+        color: #fff;
+        line-height: 5rem;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 2rem;
+        font-size: 2.5rem;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    nav .onglets li {
+        border: #353636 solid .1rem;
+        border-radius: 2rem;
+        background-color: rgb(44, 43, 41);
+        margin-bottom: .1rem;
+        margin-left: 0;
+        height: 7.5rem;
+        width: 28rem;
+        margin: 0 auto;
+    }
+
+    #compte {
+        margin: 0 auto;
+    }
+
+   
+
+    nav .onglets li a:hover {
+        background-color: rgb(214, 228, 228);
+        color: black;
+    }
+
+    .films-et-series .section h2 {
+        text-align: center;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+
+ 
+} 
+
+/* thème Modale */
+
+/* #narco img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+} */
+
+.list1 .ham, .list2 .ham{
+    position: relative;
+}
+
+.list1 .ham .material-icons, .list2 .ham .material-icons{
+    vertical-align: -.4rem;
+}
+
+/* Overley effect */
+.figma{
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    transform: scale(0);
+    transition: all 500ms ease-in-out;
+    transform-origin: center center;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+
+.list1 .ham:hover .figma, .list2 .ham:hover .figma{
+    transform: scale(1);
+}
+
+/* modale 1 */
+.parent-modale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+.parent-modale .modale{
+    max-width: 60rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+    z-index: 2; 
+}
+
+.parent-modale .modale img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.parent-modale .modale .desc{
+    position: static;
+    transition: none;
+    background-color: #fff;
+    color: #222;
+    
+}
+.modale-active{
+    z-index: 15;
+    opacity: 1;
+    transform-origin: center center;
+}
+.parent-modale .modale .desc h3{
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.parent-modale .modale .desc p :is(time){
+    padding: 1rem;
+}
+.parent-modale .modale button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    color: #333;
+    cursor: pointer;
+}
+
+.parent-modale .modale .desc time {
+    display: block;
+    margin: 1rem 0;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+#panni {
+    position: initial;
+    display: block;
+    margin: 1.5rem auto;
+    background-color: rgb(69, 168, 11);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 0 2rem;
+}
+
+#panni:hover {
+    box-shadow: 0 0 1.5rem #555353;
+}
+
+
+
+/* modale 2 */
+.parent-modale2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 250%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+.parent-modale2 .modale2{
+    max-width: 60rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+    z-index: 2; 
+}
+
+.parent-modale2 .modale2 img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.parent-modale2 .modale2 .desc{
+    position: static;
+    transition: none;
+    background-color: #fff;
+    color: #222;
+    
+}
+.modale-active2{
+    z-index: 15;
+    opacity: 1;
+    transform-origin: center center;
+}
+.parent-modale2 .modale2 .desc h3{
+    font-size: x-large;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.parent-modale2 .modale2 .desc p :is(time){
+    padding: 1rem;
+}
+.parent-modale2 .modale2 button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    z-index: 2;
+    color: #333;
+    cursor: pointer;
+}
+
+.parent-modale2 .modale2 .desc time {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+/* Responsive de iframe */
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
