@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", e => {
+    /*----------------------- Desactivation du lien avec du Ajax -------------------------*/
+
+    (function ($) {
+        $('.addPanier').click(function (event) {
+            event.preventDefault();
+            $.get($(this).attr('href'), {}, function (data) {
+                if (data.error == false) {
+                    alert(data.message);
+                } else {
+                    alert(data.message);
+                }
+            }, 'json');
+            return false;
+        });
+    })(jQuery);
+
+    /*----------------------- Commancer -------------------------*/
+
     e.preventDefault();
     let btn = document.querySelectorAll(".toggle");
     let body = document.querySelector('body');
@@ -120,4 +138,5 @@ document.addEventListener("DOMContentLoaded", e => {
     //  closed_all2.addEventListener("click", () => {
     //      modal2.classList.remove("modale-active2");
     //  });
+
 });

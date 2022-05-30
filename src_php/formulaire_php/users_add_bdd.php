@@ -11,6 +11,8 @@ $_bdd = new PDO('mysql:host=localhost;
                 $users = $_bdd->prepare('SELECT * FROM `client_ligue` WHERE mail_client = ?');
                 $users->execute(array($_POST['mail']));
 
+                $_SESSION['mail'] = $_POST['mail'];
+                var_dump($_SESSION['mail']);
 
 
                 if ($users->rowCount() == 0) {
@@ -38,8 +40,7 @@ $_bdd = new PDO('mysql:host=localhost;
                                     htmlentities($_city),
                                     htmlentities($_country))
                             );
-                            $_SESSION['mail'] = $_POST['mail'];
-                            var_dump($_SESSION['mail']);
+                            
                         }
                     }
                 }else {

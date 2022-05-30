@@ -29,7 +29,7 @@ $_bdd = new PDO('mysql:host=localhost;
         $_even_verif = (int) $_verif[0];
             
                 // verifier si le sport existe déjas :
-
+        $json = array('error' => true);
         if ($_even_verif == 0) {
 
                 // insertion :
@@ -40,10 +40,13 @@ $_bdd = new PDO('mysql:host=localhost;
                     htmlentities($id_user),
                     htmlentities($_id_sport))
                 );  
+                $json['error'] = false;
+                $json['message'] = "Ce Sport a bien été ajouté à vos favoris";
         }else {
-                die('Ce sport est déjas étais choisis ! ');
+                $json['message'] = "Ce sport a déjas étais choisis ! ";
             }
 
+            echo json_encode($json);
                  
 } catch(PDOException $e) {
     die('Erreur de BDD'.$e->getMessage());

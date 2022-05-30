@@ -64,7 +64,7 @@
                     <button id="panni" type="submit">Add To Basket</button>
                 </form> -->
             </figcaption>
-            <a class="add">add</a> 
+            <a class="add addPanier">add</a> 
         </figure>
     </div>
 
@@ -90,7 +90,7 @@
         </figure>
     </div>
 
-
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="./js/accueil.js"></script>
 </body>
 
