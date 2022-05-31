@@ -99,10 +99,6 @@
 ?>
 
 
-<!-- Enregistrement des favories -->
-<!-- <?php
-    // include_once ("./src_php/accueil.php/add_evenement_inc.php");
-?> -->
 
 
 

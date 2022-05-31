@@ -41,7 +41,7 @@ $_bdd = new PDO('mysql:host=localhost;
                     htmlentities($_id_sport))
                 );  
                 $json['error'] = false;
-                $json['message'] = "Ce Sport a bien été ajouté à vos favoris";
+                $json['message'] = "Ce Sport a bien été choisi avec succès ! ";
         }else {
                 $json['message'] = "Ce sport a déjas étais choisis ! ";
             }

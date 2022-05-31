@@ -21,7 +21,7 @@ header {
 
 header .gauche {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 nav img {
@@ -171,7 +171,11 @@ footer p:last-child {
 }
 
 #compte {
-    margin-left: 75rem;
+    position: absolute;
+    top: 1.7%;
+    right: 1%;
+    color: #fff;
+    /* margin-left: 75rem; */
 }
 
 
@@ -181,6 +185,7 @@ footer p:last-child {
 @media screen and (max-width: 63rem) {
 
     #compte {
+        position: initial;
         margin-left: 0;
     }
 
@@ -279,6 +284,7 @@ footer p:last-child {
 
     #compte {
         margin: 0 auto;
+        padding-top: 2.5rem;
     }
 
    
@@ -294,6 +300,11 @@ footer p:last-child {
 
     footer {
         padding: 2rem;
+    }
+
+    header .gauche {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 
