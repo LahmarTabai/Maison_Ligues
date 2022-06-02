@@ -25,8 +25,6 @@
 
          // Vérifier si l'history est vide ou pas :
 
-        
-
         $vid = $_bdd->prepare('SELECT * FROM `consulter` WHERE `consulter`.id_client = ?');
         $vid->execute(array($id_user));
   

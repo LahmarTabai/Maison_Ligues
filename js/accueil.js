@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
     /*----------------------- Commancer -------------------------*/
 
-    e.preventDefault();
+    // e.preventDefault();
     let btn = document.querySelectorAll(".toggle");
     let body = document.querySelector('body');
     let icoferm = '<i class="fas fa-times fermer" aria-hidden="true"></i>';
