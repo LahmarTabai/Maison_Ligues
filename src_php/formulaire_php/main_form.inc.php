@@ -1,6 +1,6 @@
 <?php
     const sg = "Sign In";
-    const li = "accueil.php";
+    const li = "";
     const rem = "Remember me";
 
     class MainForm {
@@ -49,19 +49,23 @@
 
 <?= $_mainForm->_label[4] ?>
 <?php
-    include_once ("./src_php/formulaire_php/select_city.inc.php");
+include_once ("./src_php/formulaire_php/users_add_bdd.php");
+?>
+<?php
+    require ("./src_php/formulaire_php/select_city.inc.php");
 ?>
 
 
 <?= $_mainForm->_label[4] ?>
 <?php
-    include_once ("./src_php/formulaire_php/select_country.inc.php");
+    require ("./src_php/formulaire_php/select_country.inc.php");
 ?>
 
 
         <ul class="sign">
             <li><button type="submit" name="valider"><?= sg ?></button></li>
         </ul>
+
 
         <ul class="ted">
             <li><label class="check" for="check"><?= rem ?></label></li> 
@@ -78,4 +82,3 @@
         </fieldset>
 
     </main>
-

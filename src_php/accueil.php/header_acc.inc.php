@@ -13,6 +13,4 @@
                 <li id="compte">LAHMAR tABAI</li>
             </ul>
         </nav>
-
-       
 </header>

@@ -1,6 +1,7 @@
 <body>
 <?php
     include_once ("./src_php/accueil.php/header_acc.inc.php");
+    var_dump($_SESSION['mail']);
 ?>
 
     <main>

@@ -1,5 +1,5 @@
-<?php 
- session_start();
+<?php
+session_start(); 
  try {
  $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
  $_bdd = new PDO('mysql:host=localhost;
@@ -34,7 +34,7 @@
             $json['message'] = "Votre History est vide ! ";
 
          }else {
-            $json['error'] = false;
+            $json['error'] = true;
             $_req = $_bdd->query("DELETE FROM `consulter` WHERE `consulter`.`id_client` = '{$id_user}' 
                                  AND `consulter`.`id_evenement` = '{$_id_sport}' ");
             $json['message'] = "Ce Sport a bien été supprimé ! ";     
@@ -57,4 +57,3 @@
 
 
 
-?>

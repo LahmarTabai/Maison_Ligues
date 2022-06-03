@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +12,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <?php 
-include_once ("./src_php/panier/panier_class.php");
-$panier = new panier();
 try {
 $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
 $_bdd = new PDO('mysql:host=localhost;
