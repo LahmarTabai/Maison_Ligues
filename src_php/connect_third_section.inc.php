@@ -12,10 +12,8 @@ $_response3 = $DB->query('SELECT * FROM `records` ORDER BY `id_record` ASC');
                 <img src="<?= strip_tags($_images->image_record) ?>" alt="<?= strip_tags($_images->nom_record) ?>">
                     <figcaption class="figma">
                         <h2>
-                            <i class="material-icons" aria-hidden="true">
-                                pages
-                            </i>
-                                Show
+                            <i class="fas fa-play-circle" aria-hidden="true"></i>
+                            Play    
                         </h2>
                     </figcaption>
                     
