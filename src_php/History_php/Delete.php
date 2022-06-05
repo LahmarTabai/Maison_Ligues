@@ -27,17 +27,23 @@ session_start();
 
         $vid = $_bdd->prepare('SELECT * FROM `consulter` WHERE `consulter`.id_client = ?');
         $vid->execute(array($id_user));
-  
-        $json = array('error' => false);
-        if ($vid->rowCount() == 0) {
 
-            $json['message'] = "Votre History est vide ! ";
+        var_dump($vid->rowCount());
+
+  
+        $json = array('error' => true);
+
+        if ($vid->rowCount() > 0) {
+
+            $del = $_bdd->prepare('DELETE FROM `consulter` WHERE `consulter`.id_client = ? AND `consulter`.id_evenement = ?');
+            $del->execute(array($id_user, $_id_sport));
+
+            $json['error'] = false;
+            $json['message'] = "Ce Sport a bien été supprimé ! ";
+            
 
          }else {
-            $json['error'] = true;
-            $_req = $_bdd->query("DELETE FROM `consulter` WHERE `consulter`.`id_client` = '{$id_user}' 
-                                 AND `consulter`.`id_evenement` = '{$_id_sport}' ");
-            $json['message'] = "Ce Sport a bien été supprimé ! ";     
+            $json['message'] = "Votre History est vide ! "; 
             }
  
              echo json_encode($json);
@@ -46,8 +52,6 @@ session_start();
      die('Erreur de BDD'.$e->getMessage());
  } 
  ?>
- 
- 
 
 
 

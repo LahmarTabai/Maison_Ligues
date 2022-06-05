@@ -10,7 +10,10 @@
                 <li><a href="#films">Sports Collectifs</a></li>
                 <li><a href="#programmes">Top Records</a></li>
                 <li><a href="./history.php"><i class="fas fa-shopping-basket"></i> My History</a></li>
-                <li id="compte">LAHMAR tABAI</li>
+                <?php
+                $prson = $_SESSION['firstname'];
+                ?>
+                <li id="compte">Wellcome <?= $prson; ?></li>
             </ul>
         </nav>
 </header>

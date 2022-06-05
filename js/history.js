@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", e => {
-
     /*----------------------- Desactivation du lien avec du Ajax -------------------------*/
 
     (function ($) {
@@ -7,18 +6,24 @@ document.addEventListener("DOMContentLoaded", e => {
             event.preventDefault();
             $.get($(this).attr('href'), {}, function (data) {
                 if (data.error == false) {
+                    confirm(data.message);
                     alert(data.message);
                     console.log(data.message);
-                    location.href = "history.php";
                 } else {
+                    confirm(data.message);
                     alert(data.message);
                     console.log(data.message);
-                    location.href = "history.php";
                 }
             }, 'json');
             return false;
         });
     })(jQuery);
+
+    const myTimeout = setTimeout(reloadAfterDel, 4000);
+
+    function reloadAfterDel() {
+        document.location.reload(true);
+    }
 
     /*----------------------- Desactivation du lien avec du Ajax -------------------------*/
 });

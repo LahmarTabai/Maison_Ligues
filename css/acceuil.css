@@ -16,7 +16,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
-    padding: 0 2.5rem;
+    padding: 1.5rem 0.5rem 0 0.5rem;
 }
 
 header .gauche {
@@ -172,7 +172,7 @@ footer p:last-child {
 
 #compte {
     position: absolute;
-    top: 1.7%;
+    top: 3%;
     right: 1%;
     color: #fff;
     /* margin-left: 75rem; */
@@ -187,6 +187,7 @@ footer p:last-child {
     #compte {
         position: initial;
         margin-left: 0;
+        font-size: x-large;
     }
 
     .toggle {
@@ -285,6 +286,7 @@ footer p:last-child {
     #compte {
         margin: 0 auto;
         padding-top: 2.5rem;
+        font-size: x-large;
     }
 
    

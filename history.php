@@ -22,13 +22,17 @@ $_bdd = new PDO('mysql:host=localhost;
                 // récupération du mail :
 
         $_mail_user  = $_SESSION['mail'];
-        var_dump($_mail_user);
+
+
 
         $_response = $_bdd->query("SELECT CL.prénom_client, E.nom_evenement, C.date_consultation, E.image_evenement, E.id_evenement, C.id_client 
                                     FROM `client_ligue` AS CL 
                                     INNER JOIN `consulter` AS C ON (CL.id_client = C.id_client) 
                                     INNER JOIN `evenement` AS E ON (E.id_evenement = C.id_evenement) 
                                     WHERE CL.mail_client = '{$_mail_user}' ORDER BY C.date_consultation DESC");
+
+
+        $number = $_response->rowCount();
                 
                
 } catch(PDOException $e) {
@@ -38,7 +42,7 @@ $_bdd = new PDO('mysql:host=localhost;
 <body>
 
     <header>
-        <h1>My History</h1>
+        <h1>You have <?= $number ?> events in your history </h1>
     </header>
 
     <main>
@@ -66,3 +70,4 @@ $_bdd = new PDO('mysql:host=localhost;
     <script src="./js/history.js"></script>
 </body>
 </html>
+

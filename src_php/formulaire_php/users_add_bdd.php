@@ -24,6 +24,7 @@ $_bdd = new PDO('mysql:host=localhost;
                             $_country = $_POST['country'];
     
                             $_SESSION['mail'] = $_POST['mail'];
+                            $_SESSION['firstname'] = $_POST['firstname'];
                             var_dump($_SESSION['mail']);
                             header("LOCATION: accueil.php");
                         
@@ -42,11 +43,12 @@ $_bdd = new PDO('mysql:host=localhost;
                                         htmlentities($_country))
                                 );
                                 $_SESSION['mail'] = $_POST['mail'];
-                                
+                                $_SESSION['firstname'] = $_POST['firstname'];
                             }
                         }
                     }else {
                         $_SESSION['mail'] = $_POST['mail'];
+                        $_SESSION['firstname'] = $_POST['firstname'];
                         header("LOCATION: accueil.php");
                         echo "Cet Utilisateur existe déjas";
     
