@@ -23,13 +23,22 @@ $_bdd = new PDO('mysql:host=localhost;
 
         $_mail_user  = $_SESSION['mail'];
 
-
-
         $_response = $_bdd->query("SELECT CL.prénom_client, E.nom_evenement, C.date_consultation, E.image_evenement, E.id_evenement, C.id_client 
                                     FROM `client_ligue` AS CL 
                                     INNER JOIN `consulter` AS C ON (CL.id_client = C.id_client) 
                                     INNER JOIN `evenement` AS E ON (E.id_evenement = C.id_evenement) 
                                     WHERE CL.mail_client = '{$_mail_user}' ORDER BY C.date_consultation DESC");
+        
+        // recupération de l'id du client et le sauvegarder dans une variable de session :
+
+        $res = $_bdd->query("SELECT `id_client` FROM `client_ligue` WHERE `mail_client` = '{$_mail_user}'");
+
+        $test = $res->fetch();
+        $_elf = (int) $test[0];
+        
+
+        $_SESSION['id_client'] = $_elf;
+        
 
 
         $number = $_response->rowCount();
