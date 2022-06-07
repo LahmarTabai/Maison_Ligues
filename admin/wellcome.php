@@ -58,7 +58,7 @@ $_bdd = new PDO('mysql:host=localhost;
     </header>
     <main>
         <section>
-            <h2>Listes des utilisateurs :</h2>
+            <h2>Listes des utilisateurs</h2>
 <table>
     <tr>
         <th>Nom</th>
@@ -78,7 +78,7 @@ $_bdd = new PDO('mysql:host=localhost;
 </section>
 
 <section>
-            <h2>Historiques choisis :</h2>
+            <h2>Historiques choisis </h2>
 <table>
     <tr>
         <th>E-Mail</th>

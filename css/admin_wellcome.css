@@ -246,3 +246,38 @@ table tr, table th {
 table thead {
     border: #120a1b solid .1rem;
 }
+
+section h2 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 4rem;
+}
+
+main section {
+    border: #120a1b solid .1rem;
+}
+
+main section:first-child {
+    margin-bottom: 2rem;
+}
+
+main section table td {
+    padding: 1rem 1rem 1rem 0;
+}
+
+main section table td a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #222;
+    line-height: 3rem;
+    text-transform: capitalize;
+    background-color: #f6301a;
+    border-radius: .4rem;
+    text-align: center;
+}
+
+main section table td a:hover {
+    background-color: #2b6b03;
+    color: #fff;
+}
