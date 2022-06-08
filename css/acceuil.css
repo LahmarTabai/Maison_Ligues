@@ -174,7 +174,7 @@ footer p:last-child {
     position: absolute;
     top: 3%;
     right: 1%;
-    color: #fff;
+    color: rgb(21,230,21);
     /* margin-left: 75rem; */
 }
 
@@ -414,9 +414,14 @@ footer p:last-child {
     right: 1.5rem;
     font-size: 2rem;
     z-index: 2;
-    color: #333;
+    color: #fff;
     cursor: pointer;
 }
+
+.parent-modale .modale button:hover{
+    box-shadow: 0 0 1.5rem #fff;
+}
+
 
 .parent-modale .modale .desc time {
     display: block;
@@ -433,6 +438,8 @@ footer p:last-child {
     color: #fff;
     padding: 1.5rem;
     border-radius: 0 2rem;
+    max-width: 25rem;
+    text-align: center;
 }
 
 #panni:hover {
@@ -501,7 +508,7 @@ footer p:last-child {
     right: 1.5rem;
     font-size: 2rem;
     z-index: 2;
-    color: #333;
+    color: #fff;
     cursor: pointer;
 }
 

@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My History</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/history.css">
 </head>
 <?php 
 try {
@@ -51,7 +51,7 @@ $_bdd = new PDO('mysql:host=localhost;
 <body>
 
     <header>
-        <h1>You have <?= $number ?> events in your history </h1>
+        <h1><code>You have <?= $number ?> events in your history</code> </h1>
     </header>
 
     <main>
@@ -63,7 +63,7 @@ $_bdd = new PDO('mysql:host=localhost;
                     <img src="<?= strip_tags($_images['image_evenement']) ?>" alt="<?= strip_tags($_images['nom_evenement']) ?>">
                         <figcaption>
                             <h2><?= strip_tags($_images['nom_evenement']) ?></h2>
-                            <a class="delPanier" href="Delete_history.php?id=<?= strip_tags($_images['id_evenement'])?>">Del</a>
+                            <a class="delPanier" href="Delete_history.php?id=<?= strip_tags($_images['id_evenement'])?>">Annuler</a>
                         </figcaption>                
                 </figure>
 </li>

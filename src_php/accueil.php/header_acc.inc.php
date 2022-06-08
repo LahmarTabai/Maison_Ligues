@@ -14,7 +14,7 @@
                 <?php
                 $prson = $_SESSION['firstname'];
                 ?>
-                <li id="compte">Wellcome <?= $prson; ?></li>
+                <li id="compte"><code>Wellcome <?= $prson; ?></code></li>
             </ul>
         </nav>
 </header>

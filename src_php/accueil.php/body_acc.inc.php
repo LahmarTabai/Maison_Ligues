@@ -65,8 +65,8 @@
                     <button id="panni" type="submit">Add To Basket</button>
                 </form> -->
             </figcaption>
-            <a class="add addPanier">add</a> 
-        </figure>
+                <a id="panni" class="add addPanier">S'inscrire à Ce Sport</a> 
+            </figure>
     </div>
 
     <!-- modale pour la section 3 -->
