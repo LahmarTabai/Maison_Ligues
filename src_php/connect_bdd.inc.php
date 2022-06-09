@@ -1,11 +1,12 @@
 <?php
 class DB {
 
-    private $host = 'localhost';
-    private $username = 'root';
-    private $password = '';
-    private $database = 'maisons';
+    private $host = '172.190.1.52';
+    private $username = 'tlahmar';
+    private $password = 'NafissaNafissa1@';
+    private $database = 'tlahmar';
     private $db;
+
     
     public function __construct($host = null, $username = null, $password = null, $database = null) {
         if ($host != null) {
