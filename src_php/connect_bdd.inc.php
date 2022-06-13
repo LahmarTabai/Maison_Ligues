@@ -1,10 +1,10 @@
 <?php
 class DB {
 
-    private $host = '172.190.1.52';
-    private $username = 'tlahmar';
-    private $password = 'NafissaNafissa1@';
-    private $database = 'tlahmar';
+    private $host = 'localhost';
+    private $username = 'root';
+    private $password = '';
+    private $database = 'maisons';
     private $db;
 
     

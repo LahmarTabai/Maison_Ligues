@@ -4,13 +4,14 @@ if(!isset($_SESSION['username'])) {
     header('Location: admin.php');
 }
 ?>
-<?php 
+<?php
+include_once('../bdd_connect.php'); 
 try {
-$_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-$_bdd = new PDO('mysql:host=172.190.1.52;
-                dbname=tlahmar', 
-                'tlahmar', 'NafissaNafissa1@',
-                array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
+// $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+// $_bdd = new PDO('mysql:host=localhost;
+//                 dbname=maisons', 
+//                 'root', '',
+//                 array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
 
                 
                 $_response1 = $_bdd->query('SELECT nom_client, prénom_client, mail_client, id_client 

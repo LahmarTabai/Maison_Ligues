@@ -1,10 +1,11 @@
 <?php 
+include_once('../bdd_connect.php');
 try {
-$_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-$_bdd1 = new PDO('mysql:host=172.190.1.52;
-                dbname=tlahmar', 
-                'tlahmar', 'NafissaNafissa1@',
-                array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
+// $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+// $_bdd = new PDO('mysql:host=localhost;
+//                 dbname=maisons', 
+//                 'root', '',
+//                 array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
     
 
                 // Verifier si le mail existe ou pas
@@ -13,7 +14,7 @@ $_bdd1 = new PDO('mysql:host=172.190.1.52;
 
                 
                       /*INSERT INTO `consulter` (id_client, id_evenement) VALUES (1, 1); */
-                            $_req1 = $_bdd1->prepare('INSERT INTO `consulter` (id_client, id_evenement) VALUES (?,?)');
+                            $_req1 = $_bdd->prepare('INSERT INTO `consulter` (id_client, id_evenement) VALUES (?,?)');
                             $_req1->execute(
                                 array(
                                     htmlentities($_mail),
@@ -41,8 +42,18 @@ $_bdd1 = new PDO('mysql:host=172.190.1.52;
     
 </head>
 <body>
-    
+<!-- 'mysql:host=172.190.1.52;
+dbname=tlahmar', 
+'tlahmar', 'NafissaNafissa1@', -->
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
