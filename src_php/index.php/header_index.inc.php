@@ -1,14 +1,14 @@
 <?php
-    const titre1 = "Films, séries TV et bien plus en illimité.";
-    const titre2 = "Où que vous soyez. Annulez à tout moment.";
+    const titre1 = "Sports, Activités bien plus en illimité.";
+    const titre2 = "Où que vous soyez. Inscrivez vous à tout moment.";
     const btn1 = "S'identifier";
     const btn2 = "Commencer >";
-    const text = "Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.";
+    const text = "Prêt à s'inscrire à des évenement ? Saisissez votre adresse e-mail pour vous abonner.";
     const place = "Adresse e-mail";
 
 
     class Header {
-        public $_logo = "./asset/Netflix-Logo.wine.svg";
+        public $_logo = "./asset/MAMA.png";
         public $_header_class = "showcase";
         public $_ul_class = "showcase-top";
         public $_img_alt = "Netflix Logo";

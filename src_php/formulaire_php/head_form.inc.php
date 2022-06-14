@@ -1,6 +1,6 @@
 <?php
 session_start();
-    const titleForm = "Netflix Login";
+    const titleForm = "Maison Ligues Login";
     class Form {
         public $_reset_css = "./css/reset.css";
         public $_css_formulaire = "./css/formulaire.css";

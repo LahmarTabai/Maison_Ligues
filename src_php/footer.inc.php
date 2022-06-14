@@ -1,6 +1,6 @@
 <?php   
-    const p1_footer = "Des questions ? Appelez le (+33) 0805-543-063";
-    const p2_footer = "Netflix France";
+    const p1_footer = "Des questions ? Appelez le (+33) 07.50.02.74.45";
+    const p2_footer = "Maison Ligue France";
 
     const class_footer = "footer-cols";
 

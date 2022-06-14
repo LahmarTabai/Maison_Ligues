@@ -1,18 +1,18 @@
 <?php
-    const titreM1 = "Regardez Netflix sur votre TV.";
-    const titreM2 = "Téléchargez vos séries préférées pour les regarder hors connexion.";
+    const titreM1 = "Inscrivez vous des cet été.";
+    const titreM2 = "Le Site de MDL est accessible depuis votre Tel.";
     const titreM3 = "Où que vous soyez.";
-    const titreM4 = "Créez des profils pour les enfants.";
+    const titreM4 = "les enfants ont aussi le droit à y participer.";
     const titreM5 = "Foire aux questions";
-    const titreM6 = "Prêt à regarder Netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.";
+    const titreM6 = "Prêt à s'inscrire à des évenement ? Saisissez votre adresse e-mail pour vous abonner.";
 
 
     const btnM1 = "Commencer >";
 
-    const textM1 = "Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Apple TV, lecteurs Blu-ray et bien plus.";
-    const textM2 = "Enregistrez vos programmes préférés et ayez toujours quelque chose à regarder.";
-    const textM3 = "Regardez des films et séries TV en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.";
-    const textM4 = "Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.";
+    const textM1 = "Sur le site MDL plus de choix, plus de Sport et bien plus encore...";
+    const textM2 = "Enregistrez vos évenement préférés et ayez toujours quelque chose à pratiquer.";
+    const textM3 = "Inscrivez vous en accès illimité sur votre TV, smartphone, tablette et ordinateur, tout compris.";
+    const textM4 = "Les enfants découvrent de nouvelles aventures et retrouvent leurs sports préférés dans un espace bien à eux.";
 
     const placeM = "Adresse e-mail";
 
@@ -80,21 +80,21 @@
             <section class="lastsec" id="def">
                 <h2><?= titreM5 ?></h2>
                 <ul class="questions">
-                    <li>Netflix, qu'est-ce que c'est ? <?= $_main->_button?></li>
+                    <li>MDL, qu'est-ce que c'est ? <?= $_main->_button?></li>
                     <li class="hidden">Netflix est un service de streaming qui propose une vaste sélection de séries TV, films, animes, documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.
                         <br><br>
                         Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. Découvrez de nouveaux films et séries TV chaque semaine, il y en a pour tous les goûts !</li>
-                    <li>Combien coûte Netflix ? <?= $_main->_button?></li>
+                    <li>Combien coûte MDL Inscription ? <?= $_main->_button?></li>
                     <li class="hidden">Regardez Netflix sur votre smartphone, tablette, Smart TV, ordinateur ou appareil de streaming, le tout pour un tarif mensuel fixe. Les forfaits vont de 8,99 € à 17,99 € par mois. Pas de contrat ni de frais supplémentaires.</li>
-                    <li>Où puis-je regarder Netflix ? <?= $_main->_button?></li>
+                    <li>Où puis-je m'inscrire ?  <?= $_main->_button?></li>
                     <li class="hidden">Netflix, c'est où vous voulez, quand vous voulez. Connectez-vous à votre compte pour regarder Netflix en ligne sur netflix.com depuis votre ordinateur ou tout appareil connecté à Internet avec l'application Netflix, comme les Smart TV, smartphones, tablettes, lecteurs de streaming et consoles de jeu.
                         <br><br>
                         Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android ou Windows 10. Téléchargez des titres pour les regarder sur votre appareil mobile, même sans connexion Internet. Emportez Netflix partout avec vous.</li>
-                    <li>Puis-je annuler mon forfait ? <?= $_main->_button?></li>
+                    <li>Puis-je annuler mon inscription ?  <?= $_main->_button?></li>
                     <li class="hidden">Netflix offre une grande souplesse. Pas de contrat compliqué. Sans engagement. Deux clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation : ouvrez ou fermez votre compte à tout moment.</li>
-                    <li>Que puis-je regarder sur Netflix ? <<?= $_main->_button?></li>
+                    <li>Que puis-je choisir sur MDL ? <?= $_main->_button?></li>
                     <li class="hidden">Netflix propose un vaste catalogue comprenant notamment des longs métrages, des documentaires, des séries TV, des animes et des programmes originaux Netflix primés. Regardez Netflix à volonté, quand vous le voulez.</li>
-                    <li>Netflix est adapté aux enfants ? <?= $_main->_button?></li>
+                    <li>MDL est adapté aux enfants ? <?= $_main->_button?></li>
                     <li class="hidden">Netflix Jeunesse est inclus dans votre abonnement et offre un meilleur contrôle aux parents, ainsi qu'un espace dédié aux enfants, avec des films et des séries destinés à toute la famille.
                         <br><br>
                         Les profils Enfants comportent des fonctionnalités de contrôle parental avec code PIN permettant de modifier la catégorie d'âge des contenus que vos enfants peuvent regarder et de bloquer des titres spécifiques.</li>

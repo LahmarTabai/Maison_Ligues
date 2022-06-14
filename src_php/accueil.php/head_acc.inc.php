@@ -8,7 +8,7 @@ include_once ("./src_php/panier/panier_class.php");
 $panier = new panier();
 ?>
 <?php
-    const titleAcc = "Netflix";
+    const titleAcc = "Maison Ligues";   // Titre de la page
     class Acceuil {
         public $_reset_css = "./css/reset.css";
         public $_css_acceuil = "./css/acceuil.css";

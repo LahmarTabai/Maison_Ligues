@@ -1,6 +1,6 @@
 <?php
 
-    const title = "Netflix";
+    const title = "Maison Ligues";
     class Index {
         public $_reset_css = "./css/reset.css";
         public $_css_index = "./css/style.css";
