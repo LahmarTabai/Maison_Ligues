@@ -281,3 +281,19 @@ main section table td a:hover {
     background-color: #2b6b03;
     color: #fff;
 }
+
+section p {
+    display: block;
+    width: 30rem;
+    text-align: center;
+    margin: 4rem auto;
+    background-color: #120a1b;
+    color: #fff;
+    line-height: 6rem;
+    font-size: xx-large;
+}
+
+tr th {
+    background-color: #120a1b;
+    color: #fff;
+}

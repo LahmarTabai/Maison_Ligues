@@ -7,15 +7,12 @@ if(!isset($_SESSION['username'])) {
 <?php
 include_once('../bdd_connect.php'); 
 try {
-// $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-// $_bdd = new PDO('mysql:host=localhost;
-//                 dbname=maisons', 
-//                 'root', '',
-//                 array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
 
                 
                 $_response1 = $_bdd->query('SELECT nom_client, prénom_client, mail_client, id_client 
                                             FROM `client_ligue` ORDER BY id_client ASC');
+
+                
                 
                 $_response2 = $_bdd->query('SELECT DISTINCT CL.mail_client, E.nom_evenement, E.id_evenement, C.id_client, C.date_consultation 
                                             FROM `client_ligue` AS CL 
@@ -23,7 +20,19 @@ try {
                                             INNER JOIN `evenement` AS E ON (E.id_evenement = C.id_evenement) 
                                             ORDER BY C.date_consultation DESC');
 
+                // Pour calculer le nombre des Clients enregistrés
 
+                $_responseCountUser = $_bdd->query('SELECT Count(`mail_client`) FROM `client_ligue`'); 
+                $_resUser = $_responseCountUser->fetch();
+                $_userNumber = ((int) $_resUser[0]);
+                
+               
+
+                // Pour calculer le nombre événements choisis par les Clients : 
+
+                $_responseCountConsultation = $_bdd->query('SELECT Count(*) FROM `consulter`');
+                $_resConsultation = $_responseCountConsultation->fetch();
+                $_consultationNumber = ((int) $_resConsultation[0]);
 
 
 
@@ -60,6 +69,7 @@ try {
     <main>
         <section>
             <h2>Listes des utilisateurs</h2>
+            <p>Total : <?= $_userNumber ?></p>
 <table>
     <tr>
         <th>Nom</th>
@@ -72,6 +82,7 @@ try {
     <td><?= strip_tags($_images['nom_client']) ?></td>
     <td><?= strip_tags($_images['prénom_client']) ?></td>
     <td><?= strip_tags($_images['mail_client']) ?></td>
+    <!-- <td><a href="admin_delete_user.php?id=<?= $_images['id_client'] ?>">Modifier</a></td> -->
     <td><a href="admin_delete_user.php?id=<?= $_images['id_client'] ?>">Supprimer</a></td>
 </tr>
 <?php endforeach; ?>
@@ -79,7 +90,8 @@ try {
 </section>
 
 <section>
-            <h2>Historiques choisis </h2>
+            <h2>Historiques choisis</h2>
+            <p>Total : <?= $_consultationNumber ?></p>
 <table>
     <tr>
         <th>E-Mail</th>
