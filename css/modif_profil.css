@@ -1,0 +1,213 @@
+html {
+    background: rgba(0, 0, 0, .5) url(../asset/form/back.jpg) no-repeat fixed center center / cover;
+    scroll-behavior: smooth;
+}
+
+
+header h1 img {
+    display: block;
+    width: 100%;
+    padding: 2rem;
+
+}
+header h1  {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+
+body {
+    display: block;
+    max-width: 60rem;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 0 auto 3rem;
+    margin-top: 10rem;
+    padding: 2rem;
+}
+
+fieldset {
+    border: unset;
+}
+
+fieldset legend {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+label, form p, form p a {
+    color: #fff;
+}
+
+label, input, select {
+    display: block;
+    width: 100%;
+    line-height: 4rem;
+}
+
+label {
+    margin-top: 2.5rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+input {
+    background-color: #333;
+    border-radius: .3rem;
+    outline: none;
+    color: #fff;
+}
+
+input:valid{
+    background-color: rgb(232, 240, 254);
+    color:  rgb(18, 16, 16);
+}
+
+
+select {
+    float: none;
+    height: 4.3rem;
+    background-color: #333;
+    color: rgb(135, 160, 182);
+}
+
+select::placeholder, input::placeholder {
+    color: rgb(135, 160, 182);
+}
+
+.ted {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3rem;
+}
+
+.ted li label{
+    margin: auto;
+    text-align: left;
+}
+
+.ted li input {
+    margin-top: 1rem;
+    margin-left: 40%;
+}
+
+.sign {
+    display: block;
+    margin: 6rem auto;
+}
+
+.sign li {
+    display: block;
+    width: 20rem;
+    background-color: #e50914;
+    margin: 0 auto;
+    border: .1rem solid #e50914;
+    border-radius: 2rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.sign li:hover {
+    box-shadow: 0 0 1.5rem #ffffff;
+}
+
+.sign li button {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: x-large;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.nar li {
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.nar li a {
+    color: #fff;
+}
+
+.nar li p a i {
+    color: blue;
+}
+
+.nar li .taf a {
+    display: block;
+    color: blue;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.75);
+    top: 200%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 100rem;
+    
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: .1rem;
+}
+
+.footer-cols li a{
+    line-height: 3rem;
+    color: #999999;
+}
+
+footer p {
+    color: #999999;
+    line-height: 3rem;
+}
+
+.footer-cols li a:hover, footer p:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+footer p:first-child {
+    margin-bottom: 2rem;
+}
+
+footer p:last-child {
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 63rem) {
+
+    footer {
+        display: none;    
+    }
+}
+
+
+main form button {
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+    background-color: #0a7408;
+    color: #fff;
+    font-size: x-large;
+    padding: 1rem;
+    cursor: pointer;  
+}
+
+main form button:hover {
+    box-shadow: 0 0 1.5rem #ffffff;
+}
