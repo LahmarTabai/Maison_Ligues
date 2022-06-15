@@ -9,6 +9,20 @@ try {
     //                 array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',$_pdo_options));
                     
                     
+
+    // if (isset($_POST['valider']) && isset($_POST['username']) && isset($_POST['password'])) 
+                    // {
+                    //     $username = htmlspecialchars($_POST['username']);
+                    //     $password = htmlspecialchars($_POST['password']);
+
+                    //     $pass = password_hash($password, PASSWORD_DEFAULT);
+
+                    //     $users = $_bdd->prepare('INSERT INTO admin (mail, password) VALUES (?,?)');
+                    //     $users->execute(array(
+                    //         htmlentities($username),
+                    //         htmlentities($pass)));
+
+                    //     }
         
                    
     

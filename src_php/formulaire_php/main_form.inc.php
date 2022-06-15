@@ -11,6 +11,8 @@
             '<label for="mail">E-Mail</label>',
             '<label for="city">City</label>',
             '<label for="country">Country</label>',
+            '<label for="Pasword">Password</label>',
+            '<label for="Pasword-retype">Confirm Password</label>'
         ];
         
         
@@ -18,7 +20,9 @@
             '<input type="text" id="uname" name="name" placeholder="Enter Name" required>',
             '<input type="text" id="Firstname" name="firstname" placeholder="Enter Firstname" required>',
             '<input type="date" id="Birthdate" name="birthdate" placeholder="Enter Your Birthdate" required>',
-            '<input type="email" id="mail" name="mail" placeholder="Enter Email" required>'
+            '<input type="email" id="mail" name="mail" placeholder="Enter Email" required>',
+            '<input type="password" id="password" name="password" placeholder="Enter Password">',
+            '<input type="password" id="Confirm_password" name="Confirm_password" placeholder="Confirm Password">'
         ];
     }
 
@@ -61,6 +65,11 @@ include_once ("./src_php/formulaire_php/users_add_bdd.php");
     require ("./src_php/formulaire_php/select_country.inc.php");
 ?>
 
+<?= $_mainForm->_label[6] ?>
+<?= $_mainForm->_input[4] ?>
+
+<?= $_mainForm->_label[7] ?>
+<?= $_mainForm->_input[5] ?>
 
         <ul class="sign">
             <li><button type="submit" name="valider"><?= sg ?></button></li>

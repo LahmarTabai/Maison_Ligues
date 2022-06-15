@@ -16,7 +16,8 @@
         public $_section_class = "showcase-content";
         public $_form_class = "life";
 
-        static $_lien = "#but2"; 
+        static $_lien = "./src_php/connexion_php/connexion.php"; 
+        static $_form = "formulaire.php";
         static $_span_id = "mail_manquant";
     }
 
@@ -36,7 +37,7 @@
          <h2><?= titre2 ?></h2>
          <p><?= text ?></p>
          
-         <form method="get" action="<?= Header::$_lien ?>" class="<?= $_new_head->_form_class ?>">
+         <form method="get" action="<?= Header::$_form ?>" class="<?= $_new_head->_form_class ?>">
 
              <input type="email" name="email1" aria-labelledby="e-mail" class="mail" id="mail1" placeholder="<?= place ?>">
              <button id="but1" type="submit" class="btn btn-lg"><?= btn2 ?></button>
