@@ -42,7 +42,7 @@
                 </figcaption>
                 <div>
                     <img src="./asset/tv.png" alt="Netflix TV">
-                    <video src="./asset/video-tv-0819.m4v" class="video-1" autoplay="" playsinline="" loop=""></video>
+                    <video src="./asset/tv-video.m4v" class="video-1" autoplay="" playsinline="" loop=""></video>
                 </div>
                 
             </figure>
@@ -62,7 +62,7 @@
                 </figcaption>
                 <div>
                     <img src="./asset/device-pile.png" alt="Netflix Tv Apple">
-                    <video src="./asset/video-tv-0819.m4v" class="video-2" autoplay="" playsinline="" loop=""></video>
+                    <video src="./asset/enfant.m4v" class="video-2" autoplay="" playsinline="" loop=""></video>
                 </div>
             </figure>
 
