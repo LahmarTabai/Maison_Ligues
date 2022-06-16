@@ -89,14 +89,6 @@ En premier lieu, sur la page d’accueil du site, vous aurez accès à la possib
 
 <div align="center">
 
-<img src="./Documentation/Confirmation.png" alt="Ligue" width="600"/>
-
-</div>
-
-Une fois authentifié, l’utilisateur accède à la page suivante :
-
-<div align="center">
-
 # `Annexe_Développeur`
 
 </div>
