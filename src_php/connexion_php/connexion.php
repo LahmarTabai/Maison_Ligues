@@ -45,7 +45,7 @@ session_start();
 
 
         <ul class="sign">
-            <li><button type="submit" name="valider">Sign In</button></li>
+            <li><button type="submit" name="valider">Sign Up</button></li>
         </ul>
 
 
