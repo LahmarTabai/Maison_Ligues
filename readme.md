@@ -6,7 +6,7 @@
 
 ## Tabai LAHMAR
 
-[Voir le lien du site](https://phildaiguille.github.io/PPE_WEB/accueil.html)
+[Voir le lien du site](https://lahmartabai.github.io/Maison_des_ligues_tous_les_sports/)
 
 ## Sommaire :
 
